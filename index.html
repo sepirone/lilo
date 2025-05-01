@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Daily News - Berita Terkini</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: 'Arial', sans-serif;
+            line-height: 1.6;
+            background-color: #f4f4f4;
+        }
+
+        .header {
+            background-color: #2c3e50;
+            color: white;
+            padding: 1rem;
+            text-align: center;
+        }
+
+        .nav {
+            background-color: #34495e;
+            padding: 1rem;
+        }
+
+        .nav ul {
+            list-style: none;
+            display: flex;
+            justify-content: center;
+            gap: 2rem;
+        }
+
+        .nav a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 2rem;
+        }
+
+        .main-content {
+            display: grid;
+            grid-template-columns: 2fr 1fr;
+            gap: 2rem;
+            margin-top: 2rem;
+        }
+
+        .article {
+            background-color: white;
+            padding: 2rem;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+
+        .article img {
+            width: 100%;
+            height: auto;
+            margin: 1rem 0;
+        }
+
+        .sidebar {
+            background-color: white;
+            padding: 1rem;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+
+        .footer {
+            background-color: #2c3e50;
+            color: white;
+            text-align: center;
+            padding: 1rem;
+            margin-top: 2rem;
+        }
+
+        .news-date {
+            color: #7f8c8d;
+            font-size: 0.9em;
+        }
+
+        .author {
+            font-style: italic;
+            color: #3498db;
+        }
+    </style>
+</head>
+<body>
+    <header class="header">
+        <h1>DAILY NEWS</h1>
+        <p>Media Independen Terpercaya</p>
+    </header>
+
+    <nav class="nav">
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Politik</a></li>
+            <li><a href="#">Ekonomi</a></li>
+            <li><a href="#">Teknologi</a></li>
+            <li><a href="#">Olahraga</a></li>
+        </ul>
+    </nav>
+
+    <div class="container">
+        <div class="main-content">
+            <main class="article">
+                <article>
+                    <h2>Gempa 5.8 SR Guncang Jawa Barat, Warga Berlarian Keluar Rumah</h2>
+                    <p class="news-date">Dipublikasikan pada 15 Oktober 2023 | <span class="author">Reporter: Ahmad Budiman</span></p>
+                    <img src="https://source.unsplash.com/800x400/?earthquake" alt="Gempa">
+                    <p>JAKARTA - Gempa bumi berkekuatan 5.8 Skala Richter (SR) mengguncang wilayah Jawa Barat dan sekitarnya pada Minggu pagi. Pusat gempa berada di kedalaman 10 km di bawah darat...</p>
+                    <p>Berdasarkan data BMKG, episenter gempa terletak pada koordinat 7.24 LS dan 107.54 BT, tepatnya di Kabupaten Garut. Getaran dirasakan hingga ke Jakarta selama 10-15 detik.</p>
+                    <h3>Dampak yang Terjadi</h3>
+                    <p>Hingga berita ini diturunkan, belum ada laporan korban jiwa. Namun, beberapa bangunan mengalami retakan dan kerusakan ringan. Warga sempat panik dan berhamburan keluar rumah...</p>
+                </article>
+
+                <article style="margin-top: 3rem;">
+                    <h2>Startup Lokal Raup Pendanaan Seri B Senilai Rp500 Miliar</h2>
+                    <p class="news-date">Dipublikasikan pada 14 Oktober 2023 | <span class="author">Reporter: Sarah Putri</span></p>
+                    <img src="https://source.unsplash.com/800x400/?startup" alt="Startup">
+                    <p>JAKARTA - Startup teknologi asal Indonesia, FinTech Solutions, berhasil mengumpulkan pendanaan Seri B senilai Rp500 miliar yang dipimpin oleh East Ventures...</p>
+                    <p>CEO FinTech Solutions, Andi Wijaya, mengatakan dana ini akan digunakan untuk ekspansi ke pasar regional dan pengembangan fitur AI dalam platform mereka...</p>
+                </article>
+            </main>
+
+            <aside class="sidebar">
+                <h3>Berita Populer</h3>
+                <ul style="margin-top: 1rem;">
+                    <li><a href="#">Kenaikan Harga BBM Diumumkan Besok</a></li>
+                    <li><a href="#">Jadwal Lengkap Pertandingan Piala Dunia U-17</a></li>
+                    <li><a href="#">Inovasi Terbaru di Dunia AI dari OpenAI</a></li>
+                    <li><a href="#">Krisis Iklim: Es Kutub Mencair Lebih Cepat</a></li>
+                    <li><a href="#">Tips Investasi Saham untuk Pemula</a></li>
+                </ul>
+
+                <h3 style="margin-top: 2rem;">Kategori</h3>
+                <ul style="margin-top: 1rem;">
+                    <li><a href="#">Nasional</a></li>
+                    <li><a href="#">Internasional</a></li>
+                    <li><a href="#">Bisnis</a></li>
+                    <li><a href="#">Teknologi</a></li>
+                    <li><a href="#">Hiburan</a></li>
+                </ul>
+            </aside>
+        </div>
+
+        <section style="margin-top: 2rem; background-color: white; padding: 2rem; border-radius: 5px;">
+            <h2>Artikel Terkait</h2>
+            <div style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 1rem; margin-top: 1rem;">
+                <div>
+                    <img src="https://source.unsplash.com/300x200/?flood" alt="Banjir">
+                    <p><a href="#">Banjir Bandang Landa Jakarta Utara</a></p>
+                </div>
+                <div>
+                    <img src="https://source.unsplash.com/300x200/?president" alt="Presiden">
+                    <p><a href="#">Presiden Hadiri KTT Perubahan Iklim di Dubai</a></p>
+                </div>
+                <div>
+                    <img src="https://source.unsplash.com/300x200/?football" alt="Sepak Bola">
+                    <p><a href="#">Persija vs Persib: Derby Penuh Kejutan</a></p>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <footer class="footer">
+        <p>© 2023 Daily News - Media Berita Online Terpercaya</p>
+        <p>Redaksi | Pedoman Media Siber | Karir | Kontak</p>
+    </footer>
+</body>
+</html>
